@@ -6,7 +6,7 @@ on:
 jobs:
   master:
     runs-on: ubuntu-latest
-    startegy:
+    strategy:
       matrix:
         python-version: ["3.6.8"]
     steps:
