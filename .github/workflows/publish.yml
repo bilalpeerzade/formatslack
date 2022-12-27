@@ -2,7 +2,7 @@ name: Publish-PyPI-Package
 on:
   push:
     branches:
-      - main
+      - master
 jobs:
   master:
     runs-on: ubuntu-latest
