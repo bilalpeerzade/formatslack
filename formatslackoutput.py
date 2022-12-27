@@ -4,7 +4,6 @@ Created on Dec 26, 2022
 '''
 
 import pandas as pd
-from collections import OrderedDict
 
 class FormatSlackOutput:
   def formatSlackMessage(self,df):
