@@ -34,12 +34,8 @@ class FormatSlackOutput:
 def main():
     frmt = FormatSlackOutput()
     
-    data = [{'PubId': '158554', 'Publisher': 'Playbuzz - oRTB', 'Todays spend': 1025, 'Yesterday spend': 1515, '% Diff': -32.35, 'Comparison': 'Today vs Yesterday', 'Region': 'EMEA', 'Pod': 'EMEA UK'}, {'PubId': '157333', 'Publisher': 'CafeMedia (via EB)', 'Todays spend': 3653, 'Yesterday spend': 5398, '% Diff': -32.33, 'Comparison': 'Today vs Yesterday', 'Region': 'NTAM', 'Pod': 'US East'},{'PubId': '158554', 'Publisher': 'Playbuzz - oRTB', 'Todays spend': 1025, 'Yesterday spend': 1515, '% Diff': -32.35, 'Comparison': 'Today vs Yesterday', 'Region': 'EMEA', 'Pod': 'EMEA UK'}, {'PubId': '157333', 'Publisher': 'CafeMedia (via EB)', 'Todays spend': 3653, 'Yesterday spend': 5398, '% Diff': -32.33, 'Comparison': 'Today vs Yesterday', 'Region': 'NTAM', 'Pod': 'US East'}]
-    #data=[{"ID":1,"Name":"Alice","Age":25,"Address":{"Street":"123MainStreet","City":"NewYork","State":"NY"}},{"ID":2,"Name":"Bob","Age":30,"Address":{"Street":"456SecondStreet","City":"Chicago","State":"IL"}}]
-    #data = {"cid":597,"pred":2,"tl":[1,1,1]}
-    #data = ([OrderedDict([('advertiserId', 307), ('Type', 'bids'), ('CountINGX', 684554), ('CountGCP', 684682), ('CountDiff%', '-0.02')]), OrderedDict([('advertiserId', 307), ('Type', 'video'), ('CountINGX', 330727), ('CountGCP', 318334), ('CountDiff%', '3.89')]), OrderedDict([('advertiserId', 307), ('Type', 'burl'), ('CountINGX', 69695), ('CountGCP', 66627), ('CountDiff%', '4.60')])])
-    #data = (((2021, 10, 20, 13, 0), 3623.19, '13/30/2010/raw/api/verifiedapi?&op=GETCONTENTSUMMARY', 'raw/api/verifiedapi', 'ETL'), ((2021, 10, 20, 14, 0), 3398.79, '14/30/2010/raw/api/verifiedapi?&op=GETCONTENTSUMMARY', 'raw/api/verifiedapi', 'ETL'), ((2021, 10, 20, 15, 0), 3098.86, '15/30/2010/raw/api/verifiedapi?&op=GETCONTENTSUMMARY', 'raw/api/verifiedapi', 'ETL'))
-    #df = pd.DataFrame(data, columns=['timestamp', 'size', 'url', 'path', 'type'])
+    
+    data=[{"ID":1,"Name":"Alice","Age":25,"Address":{"Street":"123MainStreet","City":"NewYork","State":"NY"}},{"ID":2,"Name":"Bob","Age":30,"Address":{"Street":"456SecondStreet","City":"Chicago","State":"IL"}}]
     df = pd.json_normalize(data)
     frmt.formatSlackMessage(df)
 if __name__ == "__main__":
