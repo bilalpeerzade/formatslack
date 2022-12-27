@@ -6,7 +6,7 @@ setup (
     version="1.0.0",
     description="A project to format the slack messages in a structured way",
     author="Bilal Peerzade",
-    author_email="bilal.peerzade@gmail.com",
+    author_email="bilalpeerzade@gmail.com",
     packages=['formatslackmessage'],
     package_dir={"":"src"},
     install_requires=[
