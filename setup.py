@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup (
     name="formatSlackMessage",
-    version="1.0.1",
+    version="1.0.2",
     description="A project to format the slack messages in a structured way",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
