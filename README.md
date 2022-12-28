@@ -16,18 +16,23 @@ pip install formatSlackMessage
 example:
 
 #import the installed library
+
 from formatslackmessage import formatslackoutput
 
 import pandas as pd
+
 data=[{"ID":1,"Name":"Alice","Age":25,"Address":{"Street":"123MainStreet","City":"NewYork","State":"NY"}},{"ID":2,"Name":"Bob","Age":30,"Address":{"Street":"456SecondStreet","City":"Chicago","State":"IL"}}]
 
 #convert the list of json to a df
+
 df= pd.json_normalize(data)
 
 #call the function to format your data to a tabular format
+
 formatslackoutput.formatSlackMessage(df)
 
 Output
+
 +----+-------+-----+-----------------+--------------+---------------+
 |ID  |Name   |Age  |Address.Street   |Address.City  |Address.State  |
 +----+-------+-----+-----------------+--------------+---------------+
