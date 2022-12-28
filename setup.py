@@ -7,6 +7,7 @@ setup (
     description="A project to format the slack messages in a structured way",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
+    keywords=['formatmessage', 'slackoutput', 'slack', 'format'],
     author="Bilal Peerzade",
     author_email="bilalpeerzade@gmail.com",
     packages=['formatslackmessage'],
