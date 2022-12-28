@@ -6,7 +6,7 @@ Created on Dec 26, 2022
 import pandas as pd
 
 
-def formatSlackMessage(self,df):
+def formatSlackMessage(df):
     df = df.applymap(str)
     max_lengths = df.apply(lambda x: (x.str.len().max() if x.str.len().max() > len(x.name) else len(x.name)) if x.dtype == 'object' else len(x.name))
     separator = '+'
@@ -29,4 +29,3 @@ def formatSlackMessage(self,df):
       rows=rows+'\n'
     output = separator+header+separator+rows+separator
     return output
-    
