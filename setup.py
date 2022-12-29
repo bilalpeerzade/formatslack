@@ -16,7 +16,7 @@ setup (
         "pandas >= 1.1.5"
     ],
     classifiers=[
-        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 2.7",
         "License :: OSI Approved :: MIT License",
         "Operating System :: Unix",
         "Development Status :: 5 - Production/Stable"
